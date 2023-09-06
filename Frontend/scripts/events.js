@@ -1,4 +1,4 @@
-let baseUrl = `http://localhost:3000`
+let baseUrl = `https://backendeventmanagement-production.up.railway.app`
 
 // Get references to the select elements
 const categorySelect = document.getElementById("category-filter");

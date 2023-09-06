@@ -1,4 +1,4 @@
-let baseUrl = `http://localhost:3000`
+let baseUrl = `https://backendeventmanagement-production.up.railway.app`
 const eventForm = document.getElementById("event-form");
 
  // Function to parse query parameters from the URL

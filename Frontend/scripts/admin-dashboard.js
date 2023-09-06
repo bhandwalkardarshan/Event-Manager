@@ -1,4 +1,4 @@
-let baseUrl = "http://localhost:3000"
+let baseUrl = `https://backendeventmanagement-production.up.railway.app`
 const eventForm = document.getElementById("event-form");
 const eventTable = document.getElementById("event-table");
 
@@ -26,11 +26,12 @@ eventForm.addEventListener("submit", function (event) {
         .then((data) => {
             console.log(data);
             alert("Event Added Successfully")
+            fetchData();
         })
         .catch((error) => {
             console.error("Error:", error);
         });
-        fetchData();
+        
       eventForm.reset()  
 });
 
@@ -86,10 +87,11 @@ function deleteEvent(eventId) {
         .then((data) => {
             console.log(data);
             alert("Event Deleted Successfully")
+            fetchData();
         })
         .catch((error) => {
             console.error("Error:", error);
         });
-        fetchData();
+        
     console.log(`Delete event with ID: ${eventId}`);
 }

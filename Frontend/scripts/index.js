@@ -24,7 +24,7 @@ loginForm.addEventListener("submit", function (event) {
             console.log(data);
             // Set the token in local storage
             localStorage.setItem('token', data.token);
-            window.location.href="admin-dashboard.html";
+            window.location.href="./html/admin-dashboard.html";
         })
         .catch((error) => {
             alert(error)
